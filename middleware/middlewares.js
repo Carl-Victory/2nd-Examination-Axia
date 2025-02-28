@@ -41,7 +41,7 @@ const authmiddleware = async (req, res, next) => {
     } catch (error) {
         console.error(error);//If process fails, display in our terminal
         //if process fails, respond with error status code and message to the client
-        res.status(500).json({ message: 'Server error' }); // Handle errors
+        res.status(500).json({ message: 'Server error' }); 
     }
 };
 
